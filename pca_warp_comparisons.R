@@ -19,7 +19,7 @@ proc.preds = shape.predictor(proc.gpa, x = proc.PC1, Intercept = FALSE,
 boas.preds = shape.predictor(boas.gpa, x = boas.PC1, Intercept = FALSE, 
                              pred1 = min(boas.PC1), pred2 = max(boas.PC1)) 
 
-#you need to save the file without compression from Slicer to be able to read into R.
+#you need to save the PLY file without compression from Slicer to be able to read into R.
 
 ref.model = read.ply("/Users/amaga/Downloads/Gor_template_ASCII.ply")
 ref.lm = read.markups.fcsv("/Users/amaga/Downloads/Gorilla_template_LM1.fcsv")
