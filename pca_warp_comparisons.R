@@ -33,16 +33,16 @@ proc.PC1.min = warpRefMesh(ref.model, ref.lm, ref=proc.preds$pred1)
 
 open3d()
 shade3d(proc.PC1.max, col="blue")
-writePLY(con="/Users/amaga/Desktop/proc_PC1_max.ply")
+writePLY(con="./proc_PC1_max.ply")
 
 open3d()
 shade3d(proc.PC1.min, col="blue")
-writePLY(con="/Users/amaga/Desktop/proc_PC1_min.ply")
+writePLY(con="./proc_PC1_min.ply")
 
 open3d()
 shade3d(boas.PC1.max, col="blue")
-writePLY(con="/Users/amaga/Desktop/boas_PC1_max.ply")
+writePLY(con="./boas_PC1_max.ply")
 
 open3d()
 shade3d(boas.PC1.min, col="blue")
-writePLY(con="/Users/amaga/Desktop/boas_PC1_min.ply")
+writePLY(con="./boas_PC1_min.ply")
