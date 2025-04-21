@@ -1,8 +1,8 @@
 library(geomorph)
 library(SlicerMorphR)
-
-proc.path = "/Users/amaga/Desktop/large_apes_manual_LMs/procrustes/2025-04-20_19_35_56/outputData.csv"
-boas.path = "/Users/amaga/Desktop/large_apes_manual_LMs/boas/2025-04-20_19_36_18/outputData.csv"
+#use large_ape_skulls LM file from SlicerMorph sample data
+proc.path = "./procrustes/2025-04-20_19_35_56/outputData.csv"
+boas.path = "./boas/2025-04-20_19_36_18/outputData.csv"
 
 proc.gpa = arrayspecs(read.csv(proc.path)[,-c(1:3)], p=41, k=3)
 boas.gpa = arrayspecs(read.csv(boas.path)[,-c(1:3)], p=41, k=3)
